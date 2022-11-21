@@ -37,8 +37,8 @@ const array1 = ["a", "b", "c"];
 array1.forEach((element) => console.log(element));
 
 // Arrow Function
-let arrowFunction = (element) => {
-  console.log(element);
+let arrowFunction = (element, index) => {
+  console.log(`${element}, index ${index}`);
 };
 array1.forEach(arrowFunction);
 
