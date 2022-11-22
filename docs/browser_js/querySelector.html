@@ -27,6 +27,16 @@
     <a id="google" href="https://www.google.com">Google</a>
 
     <script>
+      let querylist = document.querySelectorAll(".list");
+      querylist.forEach((list, index) => {
+        console.log(`${index} : ${list.outerHTML}`);
+        // querylist[0].querySelectorAll(".item")
+        let queryItems = list.querySelectorAll(".item");
+        queryItems.forEach((item, index) => {
+          console.log(`${index} : ${item.outerHTML}`);
+        });
+      });
+
       // body 모든 형제 출력
       let allbody = document.querySelectorAll("body > *");
       allbody.forEach((elements) => console.log(elements));
