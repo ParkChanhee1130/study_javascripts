@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/events.css" />
+  </head>
+  <body>
+    <h3>Property</h3>
+    <div onclick="alert('click on Me')">Click on Me! with alert</div>
+    <div id="changetext" onclick="changeText()">Click on Me!</div>
+    <br />
+    <h3>Listener</h3>
+    <div id="clickalert">Click on Me! with alert()</div>
+    <div id="targetText">Target Change Text</div>
+    <button id="buttonChangeText">change Text</button>
+    <script>
+      let queryclickalert = document.querySelector("#clickalert");
+      queryclickalert.addEventListener("click", clickAlert);
+      function clickAlert() {
+        alert("click on me");
+      }
+    </script>
+    <script src="./js/events.js"></script>
+  </body>
+</html>
