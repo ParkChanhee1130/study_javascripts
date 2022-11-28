@@ -1,9 +1,10 @@
 let querySingle = document.querySelector("#single");
 
-function singleEvent() {
-  querySingle.addEventListener("click", singleEvent);
-}
+querySingle.addEventListener("click", (event) => {
+  singleEvent(event);
+});
 
 function singleEvent(event) {
+  console.log(event);
   querySingle.innerHTML = "Take One Event!";
 }
