@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 onclick="">JavaScript Validation</h3>
+
+    <form
+      name="myForm"
+      action="./index.html"
+      onsubmit="return validateForm()"
+      method="get"
+    >
+      <div>
+        Name: <input type="text" name="fname" id="fnameId" />
+        <input type="submit" value="Submit" />
+        <button type="submit">button Submit</button>
+      </div>
+      <div id="fnameErrorId"></div>
+    </form>
+    <hr />
+    <form name="formPW" action="./index.html" method="get">
+      <div>
+        Password: <input type="text" name="password" required />
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+    <hr />
+    <div>
+      <div>Number between 1 and 10</div>
+      <div>
+        Search: <input type="text" name="search" id="searchId" />
+        <button id="btnsearch">Search</button>
+      </div>
+      <div id="searchDescId"></div>
+    </div>
+
+    <script src="./js/form_validations.js"></script>
+  </body>
+</html>
