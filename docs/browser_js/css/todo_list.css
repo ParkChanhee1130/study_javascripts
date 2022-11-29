@@ -1,0 +1,48 @@
+* {
+  margin: 3px;
+  outline: none;
+}
+
+header {
+  font-size: 40px;
+  color: aqua;
+  background-color: purple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+#addBtn {
+  width: 10%;
+  height: 25px;
+  background-color: rgb(76, 130, 159);
+  color: white;
+  border-radius: 10px;
+}
+#addBtn:hover {
+  cursor: pointer;
+}
+
+#items li {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 3px;
+  align-items: center;
+}
+
+.task {
+  flex: 8;
+}
+
+.like i {
+  color: goldenrod;
+}
+
+.delete i {
+  color: red;
+}
+
+.material-icons:hover {
+  cursor: pointer;
+}
